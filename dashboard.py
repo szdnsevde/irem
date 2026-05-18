@@ -455,7 +455,7 @@ with p3:
                              yaxis=dict(gridcolor="#F0F0F0"), showlegend=False)
         median_wape = wape_d.median()
         fig_w.add_vline(x=median_wape, line_dash="dash", line_color="#C8102E")
-        fig_w.add_annotation(x=median_wape, y=0, text=f"Medyan: {median_wape:.1f}%",
+        fig_w.add_annotation(x=median_wape, text=f"Medyan: {median_wape:.1f}%",
                               showarrow=False, yref="paper", y=0.95,
                               font=dict(color="#C8102E", size=10))
         st.plotly_chart(fig_w, use_container_width=True)
