@@ -85,7 +85,7 @@ with st.sidebar:
     st.divider()
 
     st.subheader("⚙️ Sistem Ayarları")
-    veri_yolu  = st.text_input("Veri Dosyası", value="tüketim.xlsx")
+    veri_yolu  = st.text_input("Veri Dosyası", value="tüketim_v2.xlsx")
     cache_yolu = st.text_input("Model Cache",  value="enm412_cache.pkl")
 
     try:
