@@ -287,7 +287,7 @@ if tahminler:
         hovertemplate="%{x}: <b>%{y:,.0f}</b><extra></extra>"))
 for xv, lbl in [("Tem-24","← Eğitim | Test →"),("Oca-25","← Test | Tahmin →")]:
     fig.add_vline(x=xv, line_dash="dot", line_color="#F39200", line_width=1.5)
-    fig.add_annotation(x=xv, y=0, text=lbl, showarrow=False,
+    fig.add_annotation(x=xv, text=lbl, showarrow=False,
                        font=dict(size=9, color="#F39200"),
                        yref="paper", yanchor="bottom", y=0.02)
 fig.update_layout(
